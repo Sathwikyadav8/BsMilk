@@ -1,0 +1,251 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BsMilk — Fresh Milk Delivery</title>
+  <meta name="description" content="BsMilk - Fresh milk & dairy delivery to your home" />
+  <style>
+    :root{--accent:#0b8457;--dark:#0b2130;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;color:#122;line-height:1.5}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:20}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#66c28d);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--dark);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}.hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:48px 28px;max-width:1200px;margin:28px auto}
+.hero h1{font-size:28px;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0 0 18px}
+.badges{display:flex;gap:8px;margin:18px 0}
+.badge{background:#f3faf6;color:var(--accent);padding:8px 10px;border-radius:999px;font-weight:700}
+
+.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(14,30,37,0.06)}
+.product{display:flex;gap:12px;align-items:center}
+.product img{width:84px;height:84px;border-radius:8px;object-fit:cover}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
+
+.section{max-width:1100px;margin:40px auto;padding:0 20px}
+.section h2{margin:0 0 12px}
+.features{display:flex;gap:18px}
+.feature{flex:1;background:#fff;padding:18px;border-radius:10px}
+
+footer{background:#08121a;color:#fff;padding:28px 20px;margin-top:36px}
+footer .inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;gap:20px}
+
+/* responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  nav{display:none}
+  .mobile-nav{display:flex}
+}
+@media (max-width:520px){
+  .grid{grid-template-columns:1fr}
+}
+
+/* small util */
+.muted{color:var(--muted)}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">BM</div>
+      <div>
+        <div style="font-weight:800">BsMilk</div>
+        <div style="font-size:12px;color:var(--muted)">Fresh milk — local delivery</div>
+      </div>
+    </div><nav>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#subscribe">Subscribe</a>
+  <a href="#contact">Contact</a>
+  <a class="cta" href="#subscribe">Get Started</a>
+</nav>
+
+<div class="mobile-nav" style="display:none">
+  <a class="cta" href="#subscribe">Get Started</a>
+</div>
+
+  </header>  <main>
+    <section class="hero">
+      <div>
+        <div class="badge">Local • Fresh • Daily</div>
+        <h1>Fresh milk delivered to your doorstep — daily or weekly</h1>
+        <p class="muted">BsMilk connects you with local dairy farms. Pure milk, hygienically packaged and delivered at your chosen schedule. Perfect for families, tea stalls and small businesses.</p><div style="display:flex;gap:12px;align-items:center">
+      <a class="btn cta" href="#subscribe">Start Delivery</a>
+      <a class="btn" href="#products">View Products</a>
+    </div>
+
+    <div style="margin-top:18px">
+      <div style="background:#fff;padding:12px;border-radius:10px;display:flex;gap:12px;align-items:center;max-width:520px">
+        <div style="font-weight:700">Why BsMilk?</div>
+        <div class="muted">Locally sourced • Transparent pricing • Flexible plans</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Today's Popular Pack</h3>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Milk bottle">
+      <div>
+        <div style="font-weight:800">Full Cream Milk — 1 L</div>
+        <div class="muted">₹40 / bottle</div>
+        <div style="margin-top:8px"><small class="muted">Delivery today if you order within 2 hours</small></div>
+      </div>
+    </div>
+
+    <hr style="margin:16px 0;border:none;border-top:1px solid #f0f2f4">
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a class="btn" href="#products">See all products</a>
+      <a class="btn" href="#contact">Talk to us</a>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="section">
+  <h2>Our Products</h2>
+  <p class="muted">Hand-picked dairy essentials from trusted farms.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="https://images.unsplash.com/photo-1582447933463-7ee5a4d3b8b8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="product">
+        <div>
+          <div style="font-weight:700">Toned Milk — 1 L</div>
+          <div class="muted">₹36</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="https://images.unsplash.com/photo-1506086679523-48b1e6d7f6a5?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="product">
+        <div>
+          <div style="font-weight:700">Curd — 500 g</div>
+          <div class="muted">₹28</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="https://images.unsplash.com/photo-1619946794135-5bdc6f3c9f95?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="product">
+        <div>
+          <div style="font-weight:700">Paneer — 250 g</div>
+          <div class="muted">₹55</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="subscribe" class="section">
+  <div style="display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start">
+    <div>
+      <h2>Subscribe & Save</h2>
+      <p class="muted">Choose your delivery frequency and pause or cancel anytime.</p>
+
+      <div class="features">
+        <div class="feature">
+          <div style="font-weight:700">Daily Delivery</div>
+          <div class="muted">Get fresh milk to your door every morning.</div>
+        </div>
+        <div class="feature">
+          <div style="font-weight:700">Flexible Plans</div>
+          <div class="muted">Weekly / Bi-weekly / Monthly options available.</div>
+        </div>
+        <div class="feature">
+          <div style="font-weight:700">Easy Payments</div>
+          <div class="muted">Cash on delivery or UPI / Card.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Start your subscription</h3>
+      <!-- Simple form: updates via mailto or integrate with Netlify Forms / your backend -->
+      <form id="subsForm" onsubmit="handleSubscribe(event)">
+        <label style="display:block;margin-bottom:8px">Full name</label>
+        <input id="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-bottom:10px">
+
+        <label style="display:block;margin-bottom:8px">Phone or UPI</label>
+        <input id="phone" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-bottom:10px">
+
+        <label style="display:block;margin-bottom:8px">Delivery frequency</label>
+        <select id="freq" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-bottom:10px">
+          <option>Daily</option>
+          <option>Weekly</option>
+          <option>Bi-weekly</option>
+        </select>
+
+        <button class="cta" style="width:100%;border:none;cursor:pointer">Subscribe</button>
+      </form>
+
+      <script>
+        function handleSubscribe(e){
+          e.preventDefault();
+          const name = document.getElementById('name').value;
+          const phone = document.getElementById('phone').value;
+          const freq = document.getElementById('freq').value;
+          // default behavior: open user's email client with details
+          const subject = encodeURIComponent('New subscription from ' + name);
+          const body = encodeURIComponent('Name: ' + name + '\nPhone/UPI: ' + phone + '\nFrequency: ' + freq + '\n\nPlease contact to confirm.');
+          window.location.href = 'mailto:youremail@example.com?subject='+subject+'&body='+body;
+        }
+      </script>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About BsMilk</h2>
+  <p class="muted">BsMilk was started to bring pure, unadulterated dairy from local farms to your home. Our focus is on hygiene, timely delivery and fair prices for farmers.</p>
+
+  <div style="margin-top:16px;display:flex;gap:12px;align-items:center">
+    <div class="card" style="padding:12px">✔ Locally sourced</div>
+    <div class="card" style="padding:12px">✔ Transparent pricing</div>
+    <div class="card" style="padding:12px">✔ Flexible delivery</div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p class="muted">Questions? Orders by phone or WhatsApp.</p>
+
+  <div style="display:flex;gap:16px;align-items:center;margin-top:12px;flex-wrap:wrap">
+    <div class="card" style="min-width:220px">
+      <div style="font-weight:700">Phone</div>
+      <div class="muted">+91 79898 95739</div>
+    </div>
+
+    <div class="card" style="min-width:220px">
+      <div style="font-weight:700">Email</div>
+      <div class="muted">saathwikyadav8@gmail.com</div>
+    </div>
+
+    <div class="card" style="min-width:220px">
+      <div style="font-weight:700">Address</div>
+      <div class="muted">Gokaraju Rangaraju Institute of Engineering and Technology (edit this)</div>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="inner">
+      <div>
+        <div style="font-weight:800">BsMilk</div>
+        <div class="muted">Fresh milk delivered daily</div>
+      </div>
+      <div style="text-align:right">
+        <div>Made with ❤ — Edit this template to match your brand</div>
+        <div class="muted" style="margin-top:8px">© BsMilk — All rights reserved</div>
+      </div>
+    </div>
+  </footer>  <!-- Notes: Edit any text, prices, images (image URLs) and the mailto in the subscribe form to your real support email. To host: upload this single HTML file to Netlify / GitHub Pages / Vercel. --></body>
+</html>
